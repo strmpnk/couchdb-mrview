@@ -12,7 +12,7 @@
 
 -module(couch_mrview_compactor).
 
--include_lib("couch/include/couch_db.hrl").
+-include_lib("couch_store/include/couch_db.hrl").
 -include_lib("couch_mrview/include/couch_mrview.hrl").
 
 -export([compact/3, swap_compacted/2]).
@@ -262,5 +262,5 @@ swap_compacted(OldState, NewState) ->
 
     unlink(OldState#mrst.fd),
     erlang:demonitor(OldState#mrst.fd_monitor, [flush]),
-    
+
     {ok, NewState#mrst{fd_monitor=Ref}}.

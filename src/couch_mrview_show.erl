@@ -19,7 +19,7 @@
     list_cb/2
 ]).
 
--include_lib("couch/include/couch_db.hrl").
+-include_lib("couch_store/include/couch_db.hrl").
 -include_lib("couch_mrview/include/couch_mrview.hrl").
 
 % /db/_design/foo/_show/bar/docid

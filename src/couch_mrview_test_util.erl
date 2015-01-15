@@ -14,8 +14,8 @@
 
 -compile(export_all).
 
--include_lib("couch/include/couch_db.hrl").
--include_lib("couch/include/couch_eunit.hrl").
+-include_lib("couch_store/include/couch_db.hrl").
+-include_lib("couch_store/include/couch_eunit.hrl").
 
 
 init_db(Name, Type) ->
