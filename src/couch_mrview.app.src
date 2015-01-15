@@ -24,5 +24,13 @@
         couch_mrview_util
     ]},
     {registered, []},
-    {applications, [kernel, stdlib, couch_index, couch_stats, ioq]}
+    {applications, [
+        kernel,
+        stdlib,
+        couch_event,
+        couch_log,
+        couch_index,
+        couch_stats,
+        ioq
+    ]}
 ]}.
